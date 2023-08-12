@@ -25,6 +25,7 @@ public class Pizza {
 		} else {
 			this.price = basePriceOfNonVeg;
 		}
+		this.bill = "";
 	}
 
 	public int getPrice() {
