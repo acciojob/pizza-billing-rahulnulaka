@@ -45,7 +45,7 @@ public class Pizza {
 	public void addExtraToppings() {
 		// your code goes here
 		if (toppings == -1) {
-			if (this.isVeg) {
+			if (this.isVeg == true) {
 				this.price += ExtraToppingsForVegPizza;
 				toppings = ExtraToppingsForVegPizza;
 				return;
@@ -54,12 +54,14 @@ public class Pizza {
 			toppings = ExtraToppingsForNonvegPizza;
 			return;
 		}
+		return;
 	}
 
 	public void addTakeaway() {
 		// your code goes here
 		if (takeaway == -1) {
 			this.price += PaperbagPrice;
+			takeaway = PaperbagPrice;
 		}
 	}
 
